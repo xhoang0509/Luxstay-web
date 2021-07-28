@@ -37,10 +37,19 @@
                                     <div class="calendar__month">
                                         <div class="calendar__month-item">
                                             <div class="calendar__month-item-head">
-                                                <div class="calendar__month-icon-left">
+                                                <div class="calendar__month-icon-left" style="display: none;">
                                                     <i class="ti-arrow-left"></i>
                                                 </div>
+                                                <div class="calendar__month-item-head-name">
+                                                    <span>July</span>
+                                                    <span>2021</span>
+                                                </div>
                                             </div>
+                                            <table role="presentation" class="calendar__month-table">
+                                                <tbody class="calendar__month-table-week">
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -65,8 +74,34 @@
                         <li class="header__nav-item"><a href="#" class="header__nav-item-link">Đăng nhập</a></li>
                         <li class="header__nav-item header__nav-item-logo">
                             <img src="./assets/image/vi.svg" alt="" class="header__nav-item-img">
-                            <a href="#" class="header__nav-item-link">VND</a>
+                            <span class="header__nav-item-link">VND</span>
                             <i class="header__nav-item-icon ti-arrow-down"></i>
+                            <div class="currency__box">
+                                <div class="currency__box-languages">
+                                    <div class="currency__box-language-item">
+                                        <img src="./assets/image/vi.svg" alt="" class="currency__box-language-item-img">
+                                        <span class="currency__box-language-item-text">Tiếng Việt</span>
+                                    </div>
+                                    <div class="currency__box-language-item">
+                                        <img src="./assets/image/en.svg" alt="" class="currency__box-language-item-img">
+                                        <span class="currency__box-language-item-text">English</span>
+                                    </div>
+                                    <div class="currency__box-language-item">
+                                        <img src="./assets/image/ko.svg" alt="" class="currency__box-language-item-img">
+                                        <span class="currency__box-language-item-text">Korean</span>
+                                    </div>
+                                </div>
+                                <div class="currency__box-money">
+                                    <div class="currency__box-money-item">
+                                        <span class="currency__box-money-item-lable">VND</span>
+                                        <span class="currency__box-money-item-text">Việt Nam Đồng</span>
+                                    </div>
+                                    <div class="currency__box-money-item">
+                                        <span class="currency__box-money-item-lable">USD</span>
+                                        <span class="currency__box-money-item-text">United States Dollar</span>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>

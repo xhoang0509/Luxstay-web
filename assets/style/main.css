@@ -47,14 +47,12 @@
     align-items: center;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    overflow: hidden;
 }
 
 .header__search-input {
     height: 100%;
     width: 300px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 4px;
 }
 
 .header__search-booking {
@@ -113,9 +111,7 @@
     position: relative;
 }
 
-.header__search-date:hover {
-    cursor: pointer;
-}
+
 
 .header__search-date-icon {
     color: var(--text-color);
@@ -131,12 +127,18 @@
     position: relative;
 }
 
+.header__search-date-text:hover,
+.header__search-date-icon:hover {
+    cursor: pointer;
+}
+
 /* Modal calendar */
 .calendar {
     position: absolute;
-    top: calc(100% + 25px);
+    top: calc(100% + 20px);
     left: -315px;
     /* z-index: 1; */
+    display: none;
 }
 
 .calendar__overlay {
@@ -148,6 +150,8 @@
     width: 700px;
     z-index: 1;
     background-color: var(--white-color);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .header__search-guest {
@@ -231,10 +235,11 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .header__nav-item-logo:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .header__nav-item-img {
@@ -250,8 +255,13 @@
     font-weight: 550;
 }
 
+.header__nav-item-img:hover,
+.header__nav-item-icon:hover {
+    cursor: pointer;
+}
+
 .header__nav-item-link:hover {
-    color: #F86B39;
+    color: var(--primary-color  );
     cursor: pointer;
     animation: fadeIn ease-in 0.2s;
 }
@@ -261,6 +271,101 @@
     font-size: 1.1rem;
     font-weight: bold !important;
     margin-left: 8px ;
+}
+
+
+/* Currency box */
+.currency__box {
+    position: absolute;
+    top: calc(100% + 24px);
+    right: 0;
+    z-index: 1;
+    width: 470px;
+    height: 220px;
+    display: flex;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.currency__box::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    right: 40px;
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.currency__box-languages,
+.currency__box-money {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid #D6D6D6;
+    margin: 10px 0 10px 10px;
+}
+
+.currency__box-language-item,
+.currency__box-money-item {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.currency__box-language-item:hover,
+.currency__box-money-item:hover {
+    cursor: pointer;
+}
+
+.currency__box-language-item-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.currency__box-language-item-text {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 550;
+}
+
+
+
+.currency__box-money-item:hover .currency__box-money-item-lable,
+.currency__box-money-item:hover .currency__box-money-item-text,
+.currency__box-language-item-text:hover {
+    color: var(--primary-color);
+}
+
+.currency__box-money {
+
+}
+
+.currency__box-money-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.currency__box-money-item:hover  {
+    color: var(--primary-color);
+}
+
+.currency__box-money-item-lable {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    display: block;
+}
+
+.currency__box-money-item-text {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: 4px;
+    margin-left: 16px;
 }
 
 

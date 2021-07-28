@@ -72,11 +72,11 @@
                         <li class="header__nav-item header__nav-item-dot"><a href="#" class="header__nav-item-link">Host</a></li>
                         <li class="header__nav-item"><a href="#" class="header__nav-item-link">Đăng kí</a></li>
                         <li class="header__nav-item"><a href="#" class="header__nav-item-link">Đăng nhập</a></li>
-                        <li class="header__nav-item header__nav-item-logo">
+                        <li class="header__nav-item header__nav-item-logo" onclick="displayCurrencyBox()">
                             <img src="./assets/image/vi.svg" alt="" class="header__nav-item-img">
                             <span class="header__nav-item-link">VND</span>
                             <i class="header__nav-item-icon ti-arrow-down"></i>
-                            <div class="currency__box">
+                            <div class="currency__box" id="has-currency-box">
                                 <div class="currency__box-languages">
                                     <div class="currency__box-language-item">
                                         <img src="./assets/image/vi.svg" alt="" class="currency__box-language-item-img">
@@ -108,7 +108,19 @@
             </div>
         </header>
 
-        <div class="container"></div>
+        <div class="container">
+            <div class="grid">
+                <div class="container__slider">
+                    <a class="container__slider-link">
+                        <img src="./assets/image/file.png" alt="" class="container__slider-img">
+                    </a>
+                    <ul class="slick__dots">
+                        <li class="slick__dot-item" onclick="changeImageSlider1()"></li>
+                        <li class="slick__dot-item" onclick="changeImageSlider2()"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <footer class="footer"></footer>
     </div>

@@ -42,6 +42,18 @@ html {
     width: 20%;
 }
 
+.grid__column-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+}
+
+.grid__column-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.334%;
+}
+
 
 /* Animation */
 @keyframes fadeIn {

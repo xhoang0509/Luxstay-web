@@ -508,3 +508,45 @@
     color: var(--white-color);
     font-weight: 600;
 }
+
+/* Container Endow */
+
+.container__endow {
+    margin-top: 90px;
+}
+
+.container__endow-title {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.container__endow-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__endow-text {
+    margin-top: 22px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.container__endow-link {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.container__endow-item {
+    text-decoration: none;
+}
+
+.container__endow-item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

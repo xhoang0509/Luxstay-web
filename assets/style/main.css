@@ -664,7 +664,7 @@
 }
 
 .container__discovery-post-header:hover {
-    animation: fadeIn ease-in 2s;
+    animation: fadeIn ease-in 0.5s;
     background-color: #5F5F5F;
 }
 
@@ -741,7 +741,7 @@
 }
 
 .qr-code {
-    padding: 12px 12px;
+    padding: 20px 12px;
     border: 1px solid #ccc;
 }
 
@@ -763,22 +763,120 @@
     margin-right: 20px;
 }
 
-.app-introduce__action-appstore {
-
-}
-
-.app-introduce__action-googlepay {
-
-}
-
-.app-introduce__action-appgallery {
-
-}
-
 .container__app-mobile {
     flex: 1;
 }
 
 .container__app-mobile-img {
     width: 100%;
+}
+
+/* Container about */
+.container__about {
+    margin-top: 80px;
+}
+
+.container__about-svg {
+    width: 170px;
+    height: 35px;
+    margin-bottom: 35px;
+}
+
+.container__about-contact {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.container__about-contact-svg {
+
+}
+
+.container__about-contact-content {
+    margin-left: 12px;
+}
+
+.container__about-contact-content-title {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container__about-contact-content-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.container__about-contact-content-link:hover {
+    color: var(--primary-color);
+    animation: fadeIn ease-in 0.5s;
+}
+
+.widget {
+
+}
+
+.widget__title {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.widget__menu {
+    padding-left: 0;
+    list-style: none;
+}
+
+.widget__menu-item {
+    margin-bottom: 16px;
+}
+
+.widget__menu-item a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.widget__menu-item a:hover {
+    animation: fadeIn ease-in 0.3s;
+    color: var(--primary-color);
+}
+
+.download__apps {
+    width: 220px;
+}
+
+.download__apps-title {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.download__apps-action {
+    display: flex;
+}
+
+.download__apps-action-qrcode {
+   
+}
+
+.download__apps-action-qrcode-img {
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}   
+
+.download__apps-action-apps {
+    margin-left: 32px;
+}
+
+.download__apps-action-img {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
 }

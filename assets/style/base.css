@@ -78,8 +78,8 @@ html {
 
 @keyframes translateX {
     from {
-        opacity: 0.4;
-        transform: translateX(30%);
+        opacity: 0;
+        transform: translateX(70%);
     }
     to {
         opacity: 1;
@@ -89,8 +89,8 @@ html {
 
 @keyframes translateY {
     from {
-        opacity: 0.4;
-        transform: translateX(-30%);
+        opacity: 0;
+        transform: translateX(-70%);
     }
     to {
         opacity: 1;

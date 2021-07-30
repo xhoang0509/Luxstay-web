@@ -701,3 +701,84 @@
     height: 100%;
     border-radius: 4px;
 }
+
+
+/* Container app */
+.container__app {
+    margin-top: 100px;
+    display: flex;
+    padding: 10px 10px;
+}
+
+.container__app-introduce {
+    flex: 1;
+}
+
+.container__app-introduce-svg {
+    width: 343;
+    height: 70px;
+    margin-bottom: 24px;
+}
+
+.container__app-introduce-heading {
+    color: var(--text-color);
+    font-size: 3rem;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.container__app-text {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.app-introduce__action {
+    display: flex;
+    margin-top: 80px;
+}
+
+.qr-code {
+    padding: 12px 12px;
+    border: 1px solid #ccc;
+}
+
+.qr-code-img {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 0;
+}
+
+.app-introduce__action-apps {
+    margin-top: 12px;
+    margin-left: 55px;
+}
+
+.app-introduce__action-img {
+    width: 180px;
+    height: 56px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.app-introduce__action-appstore {
+
+}
+
+.app-introduce__action-googlepay {
+
+}
+
+.app-introduce__action-appgallery {
+
+}
+
+.container__app-mobile {
+    flex: 1;
+}
+
+.container__app-mobile-img {
+    width: 100%;
+}

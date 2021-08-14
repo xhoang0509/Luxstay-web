@@ -1,18 +1,21 @@
 /* App */
 .app {
-
+    position: relative;
+    overflow: hidden;
 }
 
 /* Header */
 .header {
     border-bottom: 1px solid #F2F2F2;
+    height: var(--header-height);
 }
 .header__app {
-    width: 1410px;
+    max-width: 1410px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     margin: auto;
+    position: relative;
 }
 .header__sidebar {
     display: flex;
@@ -30,6 +33,7 @@
 }
 
 .header__logo-link {
+
 }
 
 .svg-icon {
@@ -133,6 +137,83 @@
     cursor: pointer;
 }
 
+/* Header touch bar left */
+.header__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+    display: none;
+    cursor: pointer;
+    animation: fadeIn linear 0.2s;
+}
+.header__touch-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    z-index: 10;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.header__touch-bar-icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    padding: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__touch-bar-list {
+
+}
+
+.header__touch-bar-item {
+    padding: 16px;
+}
+
+.header__touch-bar-item-icon {
+    margin: 16px;
+}
+
+.header__input:checked ~ .header__touch-bar {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.header__input:checked ~ .header__overlay {
+    display: block;
+}
+
+
+
+/* Header mobile table icon */
+.header__icon-menu {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.header__table-mobile-icon {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin-top: -4px;
+}
 /* Modal calendar */
 .calendar {
     position: absolute;
@@ -389,19 +470,36 @@
 
 .container__slider {
     position: relative;
+    width: 100%;
 }
 
-.container__slider-link {
-    text-decoration: none;
+.container__slider-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-user-drag: auto;
+}
+
+.container__slider-list::-webkit-scrollbar {
+    display: none;
+}
+
+.container__slider-item {
+    flex-shrink: 0;
+    margin-right: 50px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .container__slider-img {
+    width: 100%;
     border-radius: 20px;
-    border-style: none;
-    max-width: 100%;
-    vertical-align: middle;
-    height: auto;
+
 }
+
+
 
 .translateX {
     animation: translateX ease-in 0.5s;
@@ -476,6 +574,7 @@
     position: relative;
     text-decoration: none;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .container__place-item-img {
@@ -605,6 +704,11 @@
     margin-top: 20px;
     font-size: 1.6rem;
     color: var(--text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    line-height: 1.4;
 }
 
 .container__recommend-sub-text:hover {
@@ -628,6 +732,10 @@
     font-size: 1.6rem;
     color: var(--text-color);
     margin-bottom: 20px;
+}
+
+.container__discovery-list {
+    border-radius: 20px;
 }
 
 .container__discovery-item {
@@ -693,6 +801,7 @@
 
 .container__use-item {
     text-decoration: none;
+    display: block;
 }
 
 .container__use-img {
@@ -741,13 +850,14 @@
 
 .qr-code {
     padding: 20px 12px;
-    border: 1px solid #ccc;
 }
 
 .qr-code-img {
     width: 148px;
     height: 148px;
     margin-bottom: 0;
+    border: 1px solid #ccc;
+    padding: 8px;
 }
 
 .app-introduce__action-apps {
@@ -986,6 +1096,7 @@
     margin-top: 90px;
     border-top: 1px solid rgb(235, 235, 235);
     height: 100px;
+    position: relative;
 }
 
 .footer-box {
@@ -996,4 +1107,34 @@
     text-align: center;
     color: #A69999;
     font-size: 1.2rem;
+}
+
+/* Phone */
+.phone {
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 10000!important;
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transition: visibility 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-img-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #0066a6;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.phone-img {
+    margin-top: 12px;
+    width: 35px;
+    height: 35px
 }

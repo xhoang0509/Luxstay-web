@@ -3,6 +3,8 @@
     --black-color: #000;
     --text-color: #222222;
     --primary-color: #F86B39;
+
+    --header-height: 70px;
 }
 
 * {
@@ -17,49 +19,6 @@ html {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
-
-/* Responsive */
-.grid {
-    width: 1300px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.grid__column-5 {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 20%;
-}
-
-.grid__column-4 {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 25%;
-}
-
-.grid__column-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 33.334%;
-}
-.grid__column-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 50%;
-}
-
-
 
 /* Animation */
 @keyframes fadeIn {

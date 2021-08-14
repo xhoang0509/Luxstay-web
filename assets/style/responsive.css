@@ -1,0 +1,74 @@
+/* PC low resolution > */
+@media (max-width: 1300px) {
+    .header__search {
+        width: 500px;
+    }
+}
+
+/* Table & Mobile */
+@media (max-width: 1023px) {
+    .header__nav {
+        display: none;
+    }
+    .header__search {
+        width: 450px;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__sidebar {
+        margin-left: 16px;
+    }
+    .hide-on-header__search {
+        display: none;
+    }
+    .header__search-date {
+        display: none;
+    }
+    .header__search-guest {
+        width: 73px;
+    }
+    .header__search-guest-number {
+        display: none;
+    }
+
+    .header__icon-menu {
+        display: flex;
+    }
+
+    .container__endow-item {
+        margin-bottom: 32px;
+    }
+    .container__recommend {
+        margin-top: 58px;
+    }
+    .container__endow-item:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .container__use-item {
+        margin-bottom: 16;
+    }
+    .container__recommend-item {
+        margin-bottom: 32px;
+    }
+    .container__discovery  {
+        margin-top: 58px;
+    }
+}
+
+
+/* Tablet */ 
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile*/
+@media (max-width: 739px) {
+    .container__greeting-title {
+        line-height: 32px;
+    }
+
+    .header__search  {
+        width: 300px;
+    }
+}

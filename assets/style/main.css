@@ -1136,5 +1136,8 @@
 .phone-img {
     margin-top: 12px;
     width: 35px;
-    height: 35px
+    height: 35px;
+}
+.phone-style-rotate {
+    animation: phoneStyle linear 0.2s;
 }

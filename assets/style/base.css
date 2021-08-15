@@ -62,3 +62,12 @@ html {
         transform: translateX(0%);
     }
 }
+
+@keyframes phoneStyle {
+    from {
+        transform: rotateZ(-40deg);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
+}

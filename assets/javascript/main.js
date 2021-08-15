@@ -40,3 +40,12 @@ setInterval(() => {
         isImage1 = true;
     }
 }, 3000);
+
+
+
+function changeStylePhone() {
+    $(".phone-img").classList.toggle("phone-style-rotate");
+}
+setInterval(() => {
+    $(".phone-img").classList.toggle("phone-style-rotate");
+}, 500)

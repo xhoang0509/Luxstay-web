@@ -46,7 +46,7 @@
         margin-bottom: 0;
     }
     .container__use-item {
-        margin-bottom: 16;
+        margin-bottom: 16px;
     }
     .container__recommend-item {
         margin-bottom: 32px;
@@ -54,21 +54,74 @@
     .container__discovery  {
         margin-top: 58px;
     }
+    .container__discovery-item {
+        margin: 16px auto;
+        padding: 0 16px;
+    }
+    .container__app-introduce-heading {
+        line-height: 1.4;
+    }
 }
 
 
 /* Tablet */ 
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    .download__apps {
+        margin: 0 auto;
+    }
 }
 
 /* Mobile*/
 @media (max-width: 739px) {
+    .container__greeting,
+    .container__place,
+    .container__endow,
+    .container__discovery,
+    .container__recommend,
+    .container__use,
+    .container__about {
+        padding: 0 16px;
+    }
+    .container__discovery-item {
+        width: 380px;
+    }
+    .container__place-item {
+        margin: 16px auto;
+        width: 244px;
+    }
     .container__greeting-title {
         line-height: 32px;
     }
-
+    .container__greeting-connent {
+        line-height: 1.4;
+    }
     .header__search  {
         width: 300px;
+    }
+    .container__app-introduce-heading {
+        line-height: 1.5;
+    }
+    .header__search-btn {
+        margin-left: 10px;
+    }
+    .app-introduce__action-img {
+        width: 120px;
+        margin-bottom: -8px;
+    }
+    .security__menu  {
+        margin: 0 auto;
+    }
+    .download__apps {
+        margin: 0 auto;
+    }
+    .sub-about-right {
+        margin-top: 32px;
+    }
+    .certification__menu {
+        margin-left: 16px;
+    }
+    .certification__menu-item-img {
+        width: 70px;
+        height: 30px;
     }
 }
